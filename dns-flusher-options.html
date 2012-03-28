@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style type="text/css">
+body{
+	background-color:#F2F5F6
+	color:#333;
+}
+.content{
+	width:560px;
+	margin:26px auto 20px;
+	padding:24px;
+	background-color:#fff;
+	border-radius:2px;
+	box-shadow:0px 0px 10px rgba(65, 63, 65, 1);
+}
+
+h1{
+	text-align:center;
+}
+h1 span{
+	background-color: #07678a;
+	color:#fff;
+	padding:2px 6px;
+}
+h2{
+	padding:16px 0 0;
+	font-size:20px;
+}
+h3{
+	font-size:16px;
+	line-height:1.6
+}
+h1, h2, h3, p{
+	color: #696969;
+}
+p{
+	line-height:1.6
+}
+label{
+	padding-right:50px
+}
+code{
+	line-height:1.8;
+	background-color:#D6D2D4;
+	padding:8px;
+	border-radius:6px;
+}
+p.ff{
+	text-align:right;
+	padding-top:20px;
+}
+.copyright{
+	color:#999;
+	font-size:14px;
+	padding:14px;
+	text-align:center
+}
+</style>
+</head>
+<body>
+	<div class="content">
+		<h1><span>D</span>NS Flusher for Chrome</h1>
+
+		<h2 id="optionName"></h2>
+		<p><label id="optionLabel"></label><input type="checkbox" id="reload-setting" /><span id="optionDescription"></span></p>
+		<hr />
+		<h2 id="attentionName"></h2>
+		<p id="attentionDescription"></p>
+		<h3>Windows:</h3>
+		<p>
+			<code>your_chrome_path/chrome.exe --enable-benchmarking</code>
+		</p>
+		<h3>Linux:</h3>
+		<p>
+			<code>google-chrome --enable-benchmarking</code>
+		</p>
+
+		<h3>Mac:</h3>
+		<p>
+			<code>open /applications/google\ chrome.app --args --enable-benchmarking</code>
+		</p>
+
+		<p class="ff" id="ffOption"></p>
+		
+	</div>
+
+	<div class="copyright">&copy; 2012, Sway Deng</div>
+	
+<script>
+var _m = chrome.i18n.getMessage;
+
+function $(id){
+	return document.getElementById(id);
+}
+
+function setMsg(id){
+	$(id).innerHTML = _m(id);
+}
+
+function initI18N(){
+	document.title = _m('optionPageTitle') + ' - DNS Flusher for Chrome';
+	setMsg('optionName');
+	setMsg('optionLabel');
+	setMsg('optionDescription');
+	setMsg('attentionName');
+	setMsg('attentionDescription');
+	setMsg('ffOption');
+}
+
+function initReloadUI(){
+	var el = $('reload-setting'),
+		reload = localStorage.getItem('reload');
+
+	el.checked = 'true' === reload;
+	el.onclick = function(){
+		localStorage.setItem('reload', el.checked);
+	}
+}
+
+initI18N();
+initReloadUI();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+	"extDescription": {
+		"message": "DNS Flusher for Chrome: one click to clear DNS cache."
+	},
+	"optionPageTitle": {
+		"message": "Option and Help"
+	},
+	"optionName": {
+		"message": "Option:"
+	},
+	"optionLabel": {
+		"message": "Auto reload:"
+	},
+	"optionDescription": {
+		"message": "Reload current page after refreshing DNS cache."
+	},
+	"attentionName": {
+		"message": "Attention:"
+	},
+	"attentionDescription": {
+		"message": "Command-line flag \"<i>--enable-benchmarking</i>\" must be used to start chrome."
+	},
+	"ffOption": {
+		"message": "Firefox users can use <a href=\"https://addons.mozilla.org/en-us/firefox/addon/dns-flusher/\" target=\"_blank\">this</a>."
+	}
+}
