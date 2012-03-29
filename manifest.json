@@ -7,12 +7,12 @@
 	"options_page": "dns-flusher-options.html",
 	"browser_action": {
 		"default_title": "DNS Flusher for Chrome",
-		"default_icon": "19.png"
+		"default_icon": "icon19.png"
 	},
 	"icons": { 
-		"16": "19.png",
-        "48": "48.png",
-        "128": "128.png" 
+		"16": "icon19.png",
+        "48": "icon48.png",
+        "128": "icon128.png" 
 	},
 	"permissions": [
 		"tabs"  
