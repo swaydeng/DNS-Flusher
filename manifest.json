@@ -1,6 +1,6 @@
 {
 	"name": "DNS Flusher for Chrome",
-	"version": "1.0",
+	"version": "1.0.1",
 	"default_locale": "en",
 	"description": "__MSG_extDescription__",
 	"background_page":"background.html",
