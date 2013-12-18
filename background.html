@@ -28,6 +28,7 @@ chrome.browserAction.onClicked.addListener(function(){
 	}
 	// benchmarking enabled
 	bm.clearHostResolverCache();
+	bm.closeConnections();
 	if('true' === reload) tabs.reload();
 });
 </script>
