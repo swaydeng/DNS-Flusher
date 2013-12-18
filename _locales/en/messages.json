@@ -18,7 +18,7 @@
 		"message": "Attention:"
 	},
 	"attentionDescription": {
-		"message": "Command-line flag \"<i>--enable-benchmarking</i>\" must be used to start chrome."
+		"message": "Command-line flag \"<i>--enable-net-benchmarking</i>\" must be used to start chrome."
 	},
 	"ffOption": {
 		"message": "Firefox users can use <a href=\"https://addons.mozilla.org/en-us/firefox/addon/dns-flusher/\" target=\"_blank\">this</a>."
