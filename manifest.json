@@ -7,7 +7,7 @@
 	"options_page": "dns-flusher-options.html",
 	"browser_action": {
 		"default_title": "DNS Flusher for Chrome",
-		"default_icon": "icon19.png"
+		"default_icon": "icon.png"
 	},
   "background": {
     "scripts": ["background.js"],
