@@ -1,21 +1,26 @@
 {
+  "version": "1.0",
 	"name": "DNS Flusher for Chrome",
-	"version": "1.0.1",
+  "manifest_version": 2,
 	"default_locale": "en",
 	"description": "__MSG_extDescription__",
-	"background_page":"background.html",
 	"options_page": "dns-flusher-options.html",
 	"browser_action": {
 		"default_title": "DNS Flusher for Chrome",
 		"default_icon": "icon19.png"
 	},
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
 	"icons": { 
 		"16": "icon19.png",
         "48": "icon48.png",
         "128": "icon128.png" 
 	},
 	"permissions": [
-		"tabs"  
+		"tabs",
+    "storage"
 	]
 }
 

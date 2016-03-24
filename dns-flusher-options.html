@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <head>
 	<meta charset="UTF-8">
 	<title></title>
@@ -72,58 +72,25 @@ p.ff{
 		<p id="attentionDescription"></p>
 		<h3>Windows:</h3>
 		<p>
-			<code>your_chrome_path/chrome.exe --enable-benchmarking</code>
+			<code>your_chrome_path/chrome.exe --enable-net-benchmarking --enable-benchmarking</code>
 		</p>
 		<h3>Linux:</h3>
 		<p>
-			<code>google-chrome --enable-benchmarking</code>
+			<code>google-chrome --enable-net-benchmarking --enable-benchmarking</code>
 		</p>
 
 		<h3>Mac:</h3>
 		<p>
-			<code>open /applications/google\ chrome.app --args --enable-benchmarking</code>
+			<code>open /applications/google\ chrome.app --args --enable-net-benchmarking --enable-benchmarking</code>
 		</p>
 
-		<p class="ff" id="ffOption"></p>
+    <!-- <p class="ff" id="ffOption"></p> --> <!-- firefox插件还没有更新 -->
 		
 	</div>
 
-	<div class="copyright">&copy; 2012, Sway Deng</div>
+	<div class="copyright">&copy; 2016, JulienBrks</div>
 	
-<script>
-var _m = chrome.i18n.getMessage;
-
-function $(id){
-	return document.getElementById(id);
-}
-
-function setMsg(id){
-	$(id).innerHTML = _m(id);
-}
-
-function initI18N(){
-	document.title = _m('optionPageTitle') + ' - DNS Flusher for Chrome';
-	setMsg('optionName');
-	setMsg('optionLabel');
-	setMsg('optionDescription');
-	setMsg('attentionName');
-	setMsg('attentionDescription');
-	setMsg('ffOption');
-}
-
-function initReloadUI(){
-	var el = $('reload-setting'),
-		reload = localStorage.getItem('reload');
-
-	el.checked = 'true' === reload;
-	el.onclick = function(){
-		localStorage.setItem('reload', el.checked);
-	}
-}
-
-initI18N();
-initReloadUI();
-
+<script src="dns-flusher-options.js">
 </script>
 </body>
 </html>
