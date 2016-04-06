@@ -27,7 +27,7 @@ function main(url) {
       currentWindow: true
     }, function(_tabs) {
       var tab = _tabs[0];
-      if (url) {
+      if (url && url.trim() !== '') {
         if (!/^http/.test(url)) {
           url = 'http://' + url; 
         }

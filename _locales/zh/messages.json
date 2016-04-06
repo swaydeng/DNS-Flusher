@@ -24,6 +24,6 @@
 		"message": "Firefox 用户可以使用<a href=\"https://addons.mozilla.org/en-us/firefox/addon/dns-flusher/\" target=\"_blank\">这个</a>。"
 	},
   "addressBarReloadTips": {
-    "message": "也可以在地址栏输入`reload`, 然后按`tab`键, 然后输入url, 然后再按`enter`键进行清楚DNS缓存后刷新"
+    "message": "也可以在地址栏输入`reload`, 然后按`tab`键, 然后输入url(假如url为空的话, 那么按回车就会竖线当前页面), 然后再按`enter`键进行清楚DNS缓存后跳转到输入的url"
   }
 }
