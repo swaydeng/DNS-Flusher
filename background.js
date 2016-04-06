@@ -6,7 +6,7 @@ if(undefined == bm){ // benchmarking disabled
   tabs.create({url: optUrl});
 }
 
-function main() {
+function main(url) {
   if(undefined == bm){ // benchmarking disabled
 		tabs.query({url: 'chrome-extension://*/' + optUrl}, function(tabArr){
 			if(tabArr.length > 0){
@@ -22,10 +22,29 @@ function main() {
     bm.clearHostResolverCache();
   }
   chrome.storage.sync.get('reload', function(items) {
-	  if(items.reload) tabs.reload();
+	  if(items.reload) tabs.query({
+      active: true,
+      currentWindow: true
+    }, function(_tabs) {
+      var tab = _tabs[0];
+      if (url) {
+        if (!/^http/.test(url)) {
+          url = 'http://' + url; 
+        }
+        tabs.executeScript({
+          code: 'window.location.href="' + url + '"'
+        })
+      } else {
+        tabs.reload(tab.id) 
+      }
+    });
   });
 }
 
-chrome.browserAction.onClicked.addListener(function(){
+chrome.browserAction.onClicked.addListener(function(tab){
 	main();
+});
+
+chrome.omnibox.onInputEntered.addListener(function(url, suggest) {
+  main(url);
 });

@@ -20,7 +20,13 @@
 	},
 	"permissions": [
 		"tabs",
-    "storage"
-	]
+    "storage",
+    "activeTab",
+    "http://*/",
+    "https://*/"
+	],
+  "omnibox": {
+    "keyword": "reload" 
+  }
 }
 

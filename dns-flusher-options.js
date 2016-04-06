@@ -16,6 +16,7 @@ function initI18N(){
 	setMsg('optionDescription');
 	setMsg('attentionName');
 	setMsg('attentionDescription');
+  setMsg('addressBarReloadTips');
 	// setMsg('ffOption');
 }
 
