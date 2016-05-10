@@ -1,6 +1,6 @@
 {
   "name": "dns-cache-flusher",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "This is a Chrome extenstion which helps you clearing DNS cache by one click. By using it, you don't need to open the page(chrome://net-internals/#dns) and click the button \"clear host cache\" and open the page(chrome://net-internals/#sockets) and click the button \"Flush socket pools\" any more.",
   "main": "background.js",
   "dependencies": {},
