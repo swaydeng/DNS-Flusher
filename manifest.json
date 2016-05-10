@@ -1,32 +1,36 @@
 {
-  "version": "1.1",
-	"name": "DNS Flusher for Chrome",
+  "version": "1.1.1",
+  "name": "DNS Flusher for Chrome",
   "manifest_version": 2,
-	"default_locale": "en",
-	"description": "__MSG_extDescription__",
-	"options_page": "dns-flusher-options.html",
-	"browser_action": {
-		"default_title": "DNS Flusher for Chrome",
-		"default_icon": "icon128.png"
-	},
+  "default_locale": "en",
+  "description": "__MSG_extDescription__",
+  "browser_action": {
+    "default_title": "DNS Flusher for Chrome",
+    "default_icon": "icon128.png"
+  },
+  "options_ui": {
+    // Required.
+    "page": "dns-flusher-options.html",
+    // Recommended.
+    "chrome_style": true
+  },
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-	"icons": { 
-		"16": "icon16.png",
+  "icons": { 
+    "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png" 
-	},
-	"permissions": [
-		"tabs",
+  },
+  "permissions": [
+    "tabs",
     "storage",
     "activeTab",
     "http://*/",
     "https://*/"
-	],
+  ],
   "omnibox": {
     "keyword": "reload" 
   }
 }
-
