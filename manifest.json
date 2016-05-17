@@ -6,7 +6,10 @@
   "description": "__MSG_extDescription__",
   "browser_action": {
     "default_title": "DNS Flusher for Chrome",
-    "default_icon": "icon128.png"
+    "default_icon": {
+      "19": "icon19.png",
+      "38": "icon38.png"
+    }
   },
   "options_ui": {
     // Required.
@@ -19,9 +22,7 @@
     "persistent": false
   },
   "icons": { 
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png" 
+    "128": "icon128.png"
   },
   "permissions": [
     "tabs",
