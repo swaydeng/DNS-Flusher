@@ -1,29 +1,32 @@
 {
-	"extDescription": {
-		"message": "DNS Flusher for Chrome: one click to clear DNS cache."
-	},
-	"optionPageTitle": {
-		"message": "Option and Help"
-	},
-	"optionName": {
-		"message": "Option:"
-	},
-	"optionLabel": {
-		"message": "Auto reload:"
-	},
-	"optionDescription": {
-		"message": "Reload current page after refreshing DNS cache."
-	},
-	"attentionName": {
-		"message": "Attention:"
-	},
-	"attentionDescription": {
-		"message": "Command-line flag \"<i>--enable-net-benchmarking</i>\" must be used to start chrome."
-	},
-	"ffOption": {
-		"message": "Firefox users can use <a href=\"https://addons.mozilla.org/en-us/firefox/addon/dns-flusher/\" target=\"_blank\">this</a>."
-	},
+  "extDescription": {
+    "message": "DNS Flusher for Chrome: one click to clear DNS cache."
+  },
+  "optionPageTitle": {
+    "message": "Option and Help"
+  },
+  "optionName": {
+    "message": "Option:"
+  },
+  "optionLabel": {
+    "message": "Auto reload:"
+  },
+  "optionDescription": {
+    "message": "Reload current page after refreshing DNS cache."
+  },
+  "attentionName": {
+    "message": "Attention:"
+  },
+  "attentionDescription": {
+    "message": "Command-line flag \"<i>--enable-net-benchmarking</i>\" must be used to start chrome."
+  },
+  "ffOption": {
+    "message": "Firefox users can use <a href=\"https://addons.mozilla.org/en-us/firefox/addon/dns-flusher/\" target=\"_blank\">this</a>."
+  },
   "addressBarReloadTips": {
     "message": "You can also input `reload` into address bar, and press `tab` , and input the url you want to reload(if the url is empty, it will reload current page), then press `enter` to redirect to the url."
+  },
+  "defaultTitle": {
+    "message": "Click to clear dns and reload"
   }
 }

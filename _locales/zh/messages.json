@@ -1,29 +1,32 @@
 {
-	"extDescription": {
-		"message": "DNS Flusher for Chrome: 一键清除DNS缓存。"
-	},
-	"optionPageTitle": {
-		"message": "选项和帮助"
-	},
-	"optionName": {
-		"message": "选项："
-	},
-	"optionLabel": {
-		"message": "自动刷新："
-	},
-	"optionDescription": {
-		"message": "清除 DNS 缓存后自动刷新当前页面。"
-	},
-	"attentionName": {
-		"message": "注意："
-	},
-	"attentionDescription": {
-		"message": "打开 Chrome 时必须加上启动参数 \"<i>--enable-net-benchmarking</i>\" 。"
-	},
-	"ffOption": {
-		"message": "Firefox 用户可以使用<a href=\"https://addons.mozilla.org/en-us/firefox/addon/dns-flusher/\" target=\"_blank\">这个</a>。"
-	},
+  "extDescription": {
+    "message": "DNS Flusher for Chrome: 一键清除DNS缓存。"
+  },
+  "optionPageTitle": {
+    "message": "选项和帮助"
+  },
+  "optionName": {
+    "message": "选项："
+  },
+  "optionLabel": {
+    "message": "自动刷新："
+  },
+  "optionDescription": {
+    "message": "清除 DNS 缓存后自动刷新当前页面。"
+  },
+  "attentionName": {
+    "message": "注意："
+  },
+  "attentionDescription": {
+    "message": "打开 Chrome 时必须加上启动参数 \"<i>--enable-net-benchmarking</i>\" 。"
+  },
+  "ffOption": {
+    "message": "Firefox 用户可以使用<a href=\"https://addons.mozilla.org/en-us/firefox/addon/dns-flusher/\" target=\"_blank\">这个</a>。"
+  },
   "addressBarReloadTips": {
     "message": "也可以在地址栏输入`reload`, 然后按`tab`键, 然后输入url(假如url为空的话, 那么按回车就会竖线当前页面), 然后再按`enter`键进行清楚DNS缓存后跳转到输入的url"
+  },
+  "defaultTitle": {
+    "message": "点击清除dns缓存然后刷新"
   }
 }
