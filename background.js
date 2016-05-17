@@ -1,4 +1,4 @@
-var	bm = chrome.benchmarking,
+var bm = chrome.benchmarking,
   tabs = chrome.tabs,
   optUrl = 'dns-flusher-options.html';
 
