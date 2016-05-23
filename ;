@@ -7,7 +7,6 @@ Notice:
 To use it, it requires command line flag --enable-net-benchmarking when you start the chrome browser.
 
 See detail below:
-
 ![usage](./option.png)
 
 Source code:
