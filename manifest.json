@@ -12,9 +12,7 @@
     }
   },
   "options_ui": {
-    // Required.
     "page": "dns-flusher-options.html",
-    // Recommended.
     "chrome_style": true
   },
   "background": {
