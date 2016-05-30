@@ -18,7 +18,7 @@
     "message": "注意："
   },
   "attentionDescription": {
-    "message": "打开 Chrome 时必须加上启动参数 \"<i>--enable-net-benchmarking</i>\" 。"
+    "message": "打开 Chrome 时必须加上启动参数 \"<i>--enable-net-benchmarking</i>\" 。假如你之前打开的chrome没有按照下面的方式打开，那么请先关闭它，然后使用以下方式打开。"
   },
   "ffOption": {
     "message": "Firefox 用户可以使用<a href=\"https://addons.mozilla.org/en-us/firefox/addon/dns-flusher/\" target=\"_blank\">这个</a>。"
